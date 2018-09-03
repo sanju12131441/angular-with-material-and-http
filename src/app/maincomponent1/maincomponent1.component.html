@@ -1,0 +1,14 @@
+<p>Please click the get request to get data from api ,and all other buttons are dummy buttons but provide response in console</p>
+<button mat-raised-button color="accent" (click)="get()">Get request</button>
+<button mat-raised-button color="primary" (click)="Put()">Put request</button>
+<button mat-raised-button color="accent" (click)="Post()">Post request</button>
+<button mat-raised-button color="warn" (click)="Delete()">Delete request</button>
+
+
+<div>
+<mat-card  *ngIf="courses$ | async as courses else noData">
+
+
+<mat-card-title *ngFor="let course of courses">{{course.description}}</mat-card-title>
+</mat-card> 
+</div>

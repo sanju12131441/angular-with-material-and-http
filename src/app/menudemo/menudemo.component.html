@@ -1,0 +1,34 @@
+<mat-sidenav-container class="example-container"  >
+  <mat-sidenav #sidenav   class="example-sidenav" mode="side" [opened]="sanju">
+    <div class="card">
+      <a routerLink="sidenav1"> <mat-icon class="icon">home</mat-icon>Sanju</a>
+  </div>
+  <div class="card">
+      <a routerLink="sidenav2">  <mat-icon >favorite</mat-icon>
+       Sanju</a>
+  </div>
+  <div class="card">
+      <a routerLink="sidenav1">  <mat-icon >delete</mat-icon>Sanju</a>
+  </div>
+  <div class="card">
+      <a routerLink="sidenav2">  <mat-icon>home</mat-icon>Sanju</a>
+  </div>
+  <div class="card">
+      <a routerLink="sidenav1"><mat-icon >favorite</mat-icon> Sanju</a>
+  </div>
+  <div class="card">
+      <a routerLink="sidenav2"><mat-icon >favorite</mat-icon>Sanju</a>
+  </div>
+  <div class="card">
+      <a routerLink="sidenav1"><mat-icon >delete</mat-icon>Sanju</a>
+  </div>
+  
+  </mat-sidenav>
+  <div class="example-sidenav-content">
+      <button type="button"  mat-button (click)="open()">open side nav</button><br>
+      <br><br><br>
+    <router-outlet></router-outlet>
+    
+   </div>
+
+</mat-sidenav-container>  
